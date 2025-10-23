@@ -1,13 +1,18 @@
 {
-  "name": "react.dev",
-  "version": "0.0.0",
+  "name": "tic-tac-toe-game",
+  "version": "1.0.0",
+  "description": "A beautiful, optimized React Tic-Tac-Toe game",
+  "author": "Jonas Merkel",
   "main": "/src/index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "stop": "kill-port 3000"
+    "stop": "kill-port 3000",
+    "lint": "eslint src --ext .js,.jsx --fix",
+    "format": "prettier --write src/**/*.{js,jsx,css,md}",
+    "analyze": "npm run build && npx serve -s build"
   },
   "dependencies": {
     "react": "^19.2.0",
